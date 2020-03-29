@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Dimitri Marco</title>
+</head>
+<body>
+    <div class="portfolio">
+        <header>
+            <nav>
+                <h3 class="logo"><a href="./index.html"> Debadree Chatterjee </a></h3>
+                <svg class="menu" width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="1.5" x2="43" y2="1.5" stroke="black" stroke-width="3"/>
+                    <line y1="11.5" x2="28" y2="11.5" stroke="black" stroke-width="3"/>
+                    <line y1="21.5" x2="16" y2="21.5" stroke="black" stroke-width="3"/>
+                </svg>               
+            </nav>
+            <div class="nav-open">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <p>Email : email@example.com</p>
+                    <p>Phone : 1234567890</p>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <img src="./img/Facebook.svg" style="padding-right: 73px;" alt="">
+                    <img src="./img/Instagram.svg" style="padding-right: 73px;" alt="">
+                    <img src="./img/Twitter.svg" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="page photographer">
+                <div class="details">
+                    <h1>Elena Morell</h1>
+                    <h2>Photographer</h2>
+                </div>
+                <div class="hero">
+                    <a href="./photographer.html">
+                        <img class="model-left" src="./img/model-left.jpg" alt="">
+                        <img class="model-right" src="./img/model-right.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+            <section class="page chef">
+                <div class="details">
+                    <h1>John Savos</h1>
+                    <h2>Pro Chef</h2>
+                </div>
+                <div class="hero">
+                    <a href="./chef.html">
+                        <img class="model-left" src="./img/chef-left.jpg" alt="">
+                        <img class="model-right" src="./img/chef-right.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+            <section class="page stylist">
+                <div class="details">
+                    <h1>John Mayer</h1>
+                    <h2>Stylist</h2>
+                </div>
+                <div class="hero">
+                    <a href="./stylist.html">
+                        <img class="model-left" src="./img/hair-left.jpg" alt="">
+                        <img class="model-right" src="./img/hair-right.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+            <div class="pages">
+                <div class="page-1">
+                    <h3>01</h3>
+                    <svg class="slide active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="black"/>
+                    </svg>
+                </div>
+                <div class="page-2">
+                    <h3>02</h3>
+                    <svg class="slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="black"/>
+                    </svg>
+                </div>
+                <div class="page-3">
+                    <h3>03</h3>
+                    <svg class="slide" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6" cy="6" r="6" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw=" crossorigin="anonymous"></script>
+    <script src="index.js">
+    </script>
+    <!--<script>
+        let pg1 = document.querySelector('.page-1 .slide');
+        let pg2 = document.querySelector('.page-2 .slide');
+        let pg3 = document.querySelector('.page-3 .slide');
+        let chef = document.querySelector('.chef');
+        let photographer = document.querySelector('.photographer');
+        let stylist = document.querySelector('.stylist');
+        let prt = document.querySelector('.portfolio');
+        pg1.addEventListener('click',function(){
+            console.log('clicked');
+            photographer.classList.remove('invisible');
+            chef.classList.add('invisible');
+            stylist.classList.add('invisible');
+            pg2.classList.remove('active');
+            pg3.classList.remove('active');
+            pg1.classList.add('active');
+            prt.style.background = 'radial-gradient(50% 50% at 50% 50%, #2B3760 0%, rgba(255, 255, 255, 0.24) 100%)';
+        });
+
+        pg2.addEventListener('click',function(){
+            console.log('clicked');
+            chef.classList.remove('invisible');
+            photographer.classList.add('invisible');
+            stylist.classList.add('invisible');
+            pg1.classList.remove('active');
+            pg3.classList.remove('active');
+            pg2.classList.add('active');
+            prt.style.background = 'radial-gradient(50% 50% at 50% 50%, #9A3506 0%, rgba(255, 255, 255, 0.24) 100%)';
+        });
+                
+        pg3.addEventListener('click',function(){
+            console.log('clicked');
+            stylist.classList.remove('invisible');
+            photographer.classList.add('invisible');
+            chef.classList.add('invisible');
+            pg1.classList.remove('active');
+            pg2.classList.remove('active');
+            pg3.classList.add('active');
+            prt.style.background = 'radial-gradient(50% 50% at 50% 50%, #4E4342 0%, rgba(255, 255, 255, 0.24) 100%)';
+        });
+
+    </script>-->
+</body>
+</html>

@@ -307,6 +307,7 @@ main {
 
 .logo, .menu {
     z-index: 2;
+    cursor: pointer;
 }
 
 @media (max-width:1024px) {
